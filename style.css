@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background:linear-gradient(to right,black, pink);
+    z-index: -1;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.25);
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: linear-gradient(to top, black, pink);
+}
+
+section nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+}
+
+section nav ul li{
+    padding: 5%;
+    text-decoration: none;
+    font-size: large;
+}
+
+section nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+section nav ul li a:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+
+
+section nav{
+    margin-left: 3%;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    padding-bottom: 111px;
+}
+
+section .main .left_side{
+    margin-top: 0px ;
+    margin-left: none;
+    padding: 5%;
+}
+
+section .main .left_side .head_name h1 span{
+    font-size: 200px;
+    color: white;
+    padding: 2%;
+}
+
+section .main .left_side .head_name h3{
+    font-size: 30px;
+    color: white;
+    padding: 1%;
+    margin-left: 30px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+section .main .left_side .icons{
+   margin-left: 30px;
+    font-size: 35px;
+    padding-top: 5%;
+}
+
+section .main .left_side .icons a{
+    color: white;
+    text-decoration: none;
+}
+
+section .main .left_side .icons a .fa-brands{
+    padding: 2%;
+}
+
+section .main .left_side .icons a:hover{
+    color: palevioletred;
+    transition: 0.3s;
+}
+
+
+section .main .right_side{
+    margin-top: 0px ;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 4%;
+    background-color: grey;
+    border-radius: 20%;
+}
+
+section .main .right_side p span{
+    font-size: 100px;
+    color: black;
+    font-family: sans-serif
+}
+
+section .main .right_side p{
+    font-size: 80px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* About */
+
+
+.About{
+    width: 100%;
+    height: 140vh;
+    padding: 25px 0;
+}
+
+.About h1{
+    font-size: 150px;
+    color: white;
+    text-align: center;
+}
+
+
+.About .main_box{
+    display: grid;
+    width: 90%;
+    margin: 5% auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 200px;
+}
+
+.About .main_box .box_A{
+    height: 50vh;
+    padding: 5%;
+    background-color: grey;
+    border-radius: 20%;
+    width: 300px;
+    transform: translateX(-20px);
+    transition: 0.3s;
+}
+
+
+.About .main_box .box_A:hover{
+    transform: translateX(2px);
+    cursor: auto;
+    opacity: 1;
+}
+
+.About .main_box .box_A .box_heading{
+    font-size: 50px;
+    color: pink;
+    padding: 2%;
+
+}
+
+.About .main_box .box_A .box_content{
+    font-size: 20px;
+    padding: 7%;
+
+}
+
+.About .main_box .box_A .box_content p{
+    padding: 5px 5px;
+}
+
+.About .main_box .box_A .box_content p span{
+    font-weight: 900;
+    padding-right: 2%;
+}
+    
+.About .main_box .box_A .box_heading .A{
+    font-size: 48px;
+}
+
+/* Skills */
+
+
+.Skills{
+    width: 100%;
+    height: 140vh;
+    padding: 5px;
+    /* margin-bottom: 300px;
+    padding-bottom: 50px; */
+}
+
+.Skills h1{
+    font-size: 150px;
+    color: white;
+    text-align: center;
+}
+
+.Skills .main_box{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+
+.Skills .main_box .Skills_icons{
+    font-size: 40px;
+    color: white;
+    padding: 3%;
+    margin-left: 25px;
+}
+
+.Skills .main_box .Skills_icons .fa-brands{
+    padding: 5%;
+    background-color: grey;
+    border-radius: 50%;
+    margin: 30px 30px 30px 30px;
+}
+
+.Skills .main_box .Skills_icons .fa-brands:hover{
+    background-color: black;
+    transition: 0.3s;
+}
+
+
+/* Projects */
+
+.Projects{
+    width: 100%;
+    height: 140vh;
+    padding: 5px 0;
+}
+
+.Projects h1{
+    font-size: 150px;
+    color: white;
+    text-align: center;
+}
+
+.Projects .main_box{
+    display: flex;
+    justify-content: space-around;
+    padding: 5%;
+    margin-bottom: 300px;
+}
+
+.Projects .main_box .frontend{
+    background-color: grey;
+    border-radius: 20%;
+    width: 35%;
+}
+
+.Projects .main_box .frontend h3{
+    font-size: 100px;
+    color: white;
+    padding: 10%;
+}
+
+.Projects .main_box .frontend a{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    padding-left: 5%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Projects .main_box .frontend a:hover{
+    color: black;
+    transition: 0.3s;
+}
+
+.Projects .main_box .frontend a span{
+    font-weight: 900;
+    padding-right: 2%;
+}
+
+.Projects .main_box .fullstack{
+    background-color: grey;
+    border-radius: 20%;
+}
+
+.Projects .main_box .fullstack h3{
+    font-size: 100px;
+    color: white;
+    padding: 10%;
+}
+
+
+/* Contact */
+
+.Contact{
+    width: 100%;
+    height: 100vh;
+    padding: 5px 0;
+    margin-left: 20px;
+    margin-top: 300px;
+}
+
+.Contact h1{
+    font-size: 150px;
+    color: white;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.Contact .main_contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Contact .left .my_details .icons{
+    margin-left: 30px;
+     font-size: 35px;
+     padding-top: 2%;
+}
+ 
+.Contact .left .my_details .icons a{
+     color: white;
+     text-decoration: none;
+}
+ 
+.Contact .left .my_details .icons a .fa-brands{
+     padding: 2%;
+}
+
+.Contact .left .my_details .icons a .fa-solid{
+    padding: 2%;
+}
+ 
+.Contact .left .my_details .icons a:hover{
+     color: palevioletred;
+     transition: 0.3s;
+}
+
+.Contact .my_details h3{
+    font-size: 50px;
+    color: white;
+}
+
+.Contact .main_contact .right{
+    padding: 5%;
+    margin-right: 0px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+}
+
+.headings:hover{
+    text-decoration: underline;
+    color: cadetblue;
+    transition: 0.3s;
+}
+
+
